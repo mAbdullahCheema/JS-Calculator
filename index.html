@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Calculator">
+        <h1>Simple Calculator</h1>
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendValue('+')" class="operator">+</button>
+            <button onclick="appendValue('9')" class="num">9</button>
+            <button onclick="appendValue('8')" class="num">8</button>
+            <button onclick="appendValue('7')" class="num">7</button>
+            <button onclick="appendValue('-')" class="operator">-</button>
+            <button onclick="appendValue('6')" class="num">6</button>
+            <button onclick="appendValue('5')" class="num">5</button>
+            <button onclick="appendValue('4')" class="num">4</button>
+            <button onclick="appendValue('*')" class="operator">*</button>
+            <button onclick="appendValue('3')" class="num">3</button>
+            <button onclick="appendValue('2')" class="num">2</button>
+            <button onclick="appendValue('1')" class="num">1</button>
+            <button onclick="appendValue('÷')" class="operator">÷</button>
+            <button onclick="findTotal()" class="equalsTotal">=</button>
+
+            <button onclick="ClearScreen()" class   ="clrscr">C</button>
+            <button onclick="BackSpace()" class="backSpace">⌫</button>
+
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
